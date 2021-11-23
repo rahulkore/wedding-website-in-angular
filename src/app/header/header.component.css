@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css?family=Tangerine');
+@import url('https://fonts.googleapis.com/css?family=Charmonman');
+.bg-cover {
+    background-attachment: static;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 15%;
+}
+
+.welcome-text {
+    color: #ffffff;
+    text-align: center;
+}
+
+.welcome-text h2 {
+    font-size: 6.667em;
+    font-weight: 700;
+    color: #ffffff;
+    text-transform: capitalize;
+    font-family: 'Tangerine',serif;
+    margin: 0;
+    margin-bottom: 11px;
+    text-shadow: 4px 4px 4px #aaa;
+}
+
+.welcome-text h2 span {
+    color: #ff4545;
+}
+
+.welcome-text h4 {
+    margin: 0;
+    margin-bottom: 30px;
+    font-weight: 500;
+    font-family: 'Charmonman', cursive;
+    color: #ff4545;
+    font-size: 40px;
+}
+
+.welcome-text h5 {
+    width: 315px;
+    height: 46px;
+    position: relative;
+    display: inline-block;
+    color: #fff;
+    font-size: 28px;
+    margin: 0;
+    font-weight: 100;
+}

@@ -1,0 +1,99 @@
+
+<div class="row">
+    <div class="col-md-12">
+       <div class="jumbotron bg-cover text-white" style="background-image: linear-gradient(to bottom, rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.6) 100%), url(assets/images/jumbotron.jpg)">
+           <div class="container welcome-text">
+               <h2>Simran <span>&</span> Akshay</h2>
+               <h4>Getting Married On</h4>
+               <h5>27th December 2021</h5>
+               <hr class="my-4">
+               <p>A perfect marriage is just two imperfect people who refuse to give up on each other
+                   But here the case is different as two pure souls unite together and make a perfect couple.</p>
+           </div>
+       <!-- /.container   -->
+       </div>
+   </div>
+
+</div>
+
+<!-- countdown -->
+<div class="row">
+    <div class="col-md-12" >
+        <div class="bg-coverdown">
+            <div class="container countdown">
+                <h4>Countdown Begins</h4>
+                <ul>
+                    <li><span id="days">{{days}}</span>days</li>
+                    <li><span id="hours">{{hours}}</span>Hours</li>
+                    <li><span id="minutes">{{minutes}}</span>Minutes</li>
+                    <li><span id="seconds">{{seconds}}</span>Seconds</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- modal -->
+<div class="row rowclass">
+    <div class="col-md-5 offset-md-1 col-xs-12 col-sm-12">
+        <div class="bg-sendwish">
+            <div class="conatiner sendwish">
+                <h2>
+                    Your Wish Means a lot to us !
+                </h2>
+                <div [hidden] = "flag">
+                    <div class="spinner-border text-primary" role="status">
+                    <span class="sr-only">Loading...</span>
+                    </div>
+                </div>
+                <form [hidden] = "!flag" novalidate [formGroup]="wishFeedback" (ngSubmit)="onSubmit()">
+                    <div>
+                      <div class="form-group">
+                        <label for="email1">Name</label>
+                        <input formControlName="name" type="text" class="form-control" id="name" aria-describedby="emailHelp" placeholder="Name">
+                      </div>
+                      <div class="form-group">
+                        <label for="password1">Your Wish</label>
+                        <input formControlName="wish" type="text" class="form-control" id="wish" placeholder="Wish">
+                      </div>
+                    </div>
+                    <div class="modal-footer border-top-0 d-flex justify-content-center">
+                      <button type="submit" class="btn btn-success">Send Wish</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-1 col-xs-12 col-sm-12">
+        <div class="container">
+            <div class="d-md-flex d-lg-flex d-xl-flex d-none" style="height: 250px;">
+                <div class="vr"></div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-5 col-xs-12 col-sm-12">
+        <div class="container happycouple">
+            <h1>
+                Happy Couple
+            </h1>
+            <img src="/assets/images/happycouple.png" alt="">
+            <h4>
+                Being rescued from ferry pets ,
+                coding shehnai with an urban wet
+            </h4>
+        </div>
+    </div>
+</div>
+<!-- add wishes popup  -->
+<!-- <div class="row">
+    <div class="col-md-12">
+        <div class="bg-sendwish">
+            <div class="container sendwish">
+                <button class="btn btn-danger" data-toggle="modal" data-target="#form">
+                    sendwish
+                </button>
+            </div>
+        </div>
+    </div>
+</div> -->
