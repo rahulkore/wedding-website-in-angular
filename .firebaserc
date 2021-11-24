@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "sound-jigsaw-233407": {
+      "hosting": {
+        "weddingWebsite": [
+          "sound-jigsaw-233407"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "sound-jigsaw-233407"
+  }
+}

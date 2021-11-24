@@ -32,7 +32,6 @@
               "src/styles.css"
             ],
             "scripts": [
-              
               "node_modules/jquery/dist/jquery.min.js",
               "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
             ]
@@ -103,6 +102,16 @@
               "src/styles.css"
             ],
             "scripts": []
+          }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "prerender": false,
+            "ssr": false,
+            "browserTarget": "weddingWebsite:build:production",
+            "firebaseProject": "sound-jigsaw-233407",
+            "firebaseHostingSite": "sound-jigsaw-233407"
           }
         }
       }

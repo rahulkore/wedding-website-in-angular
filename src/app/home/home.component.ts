@@ -29,7 +29,7 @@ export class HomeComponent implements OnInit {
 
   ngOnInit(): void {
     setInterval(() =>{
-      this.countDownDate = new Date("Dec 27, 2021 16:37:52").getTime();
+      this.countDownDate = new Date("Dec 28, 2021 12:30:00").getTime();
       this.now = new Date().getTime();
       this.timeleft = this.countDownDate - this.now;
       this.days = Math.floor(this.timeleft / (1000 * 60 * 60 * 24));;
