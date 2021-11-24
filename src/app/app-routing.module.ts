@@ -7,11 +7,16 @@ import { EngagementGalleryComponent } from './engagement-gallery/engagement-gall
 import { BridalComponent } from './bridal/bridal.component';
 const routes: Routes = [
   { path: 'ourStory', component: OurStoryComponent },
+  { path: 'ourStory', redirectTo:'/ourStory' , pathMatch: 'full'},
   { path: 'home', component: HomeComponent},
+  { path: 'home', redirectTo:'/home' , pathMatch: 'full'},
   { path: 'wishes', component: WishesComponent},
+  { path: 'wishes', redirectTo:'/wishes' , pathMatch: 'full'},
   { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: 'engagement', component: EngagementGalleryComponent},
-  { path: 'bridal', component: BridalComponent}
+  { path: 'engagement', redirectTo:'/engagement' , pathMatch: 'full'},
+  { path: 'bridal', component: BridalComponent},
+  { path: 'bridal', redirectTo:'/bridal' , pathMatch: 'full'}
 ];
 
 @NgModule({

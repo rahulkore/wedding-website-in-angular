@@ -16,7 +16,6 @@ import { HttpClientModule } from '@angular/common/http';
 
 import 'hammerjs';
 
-import { NgxImageGalleryModule } from 'ngx-image-gallery';
 import { EngagementGalleryComponent } from './engagement-gallery/engagement-gallery.component';
 import { BridalComponent } from './bridal/bridal.component';
 import { environment } from 'src/environments/environment';
@@ -40,7 +39,6 @@ import { getFirestore, provideFirestore } from '@angular/fire/firestore';
     ReactiveFormsModule,
     FormsModule,
     HttpClientModule,
-    NgxImageGalleryModule,
     provideFirebaseApp(() => initializeApp(environment.firebase)),
     provideFirestore(() => getFirestore()),
 
