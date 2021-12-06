@@ -5,6 +5,7 @@
     font-family: 'Tangerine',serif;
     font-weight: bolder;
 }
+
 /* cards */
 /*----  Main Style  ----*/
 #cards_landscape_wrap-2{
@@ -54,6 +55,7 @@
     padding-bottom: 0px; 
     font-size: 14px;
     letter-spacing: 1px;
+    font-family: 'Charmonman',serif;
     color: #000000;
   }
   #cards_landscape_wrap-2 .card-flyer .text-box h6{
@@ -62,7 +64,6 @@
     font-size: 18px;
     font-weight: bold;
     text-transform: uppercase;
-    font-family: 'Roboto Black', sans-serif;
-    letter-spacing: 1px;
-    color: #00acc1;
+    font-family: 'Charmonman',serif;
+    color: #000000;
   }
