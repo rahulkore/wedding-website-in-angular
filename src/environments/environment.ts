@@ -5,12 +5,12 @@
 export const environment = {
   production: false,
   firebase: {
-    apiKey: "AIzaSyCSgLwK3rEVmgKr3NB9S4Y0kC7UIfkOB6Q",
-    authDomain: "sound-jigsaw-233407.firebaseapp.com",
-    projectId: "sound-jigsaw-233407",
-    storageBucket: "sound-jigsaw-233407.appspot.com",
-    messagingSenderId: "663044426333",
-    appId: "1:663044426333:web:43e5613296d9215e901bb4"
+    apiKey: "AIzaSyDxTAyiEZyp5Ak95M-kahFY5FWHvoZLK20",
+  authDomain: "simaksh-wedding.firebaseapp.com",
+  projectId: "simaksh-wedding",
+  storageBucket: "simaksh-wedding.appspot.com",
+  messagingSenderId: "106686824176",
+  appId: "1:106686824176:web:cdd52b6fee1da144430c35"
   }
 };
 

@@ -4,13 +4,14 @@
 #cards_landscape_wrap-2 h1{
     font-family: 'Tangerine',serif;
     font-weight: bolder;
+    font-size: 40px;
 }
 
 /* cards */
 /*----  Main Style  ----*/
 #cards_landscape_wrap-2{
     text-align: center;
-    background: #ffdbfc;
+    background: #c6b9fa;
   }
   #cards_landscape_wrap-2 .container{
     padding-top: 20px; 

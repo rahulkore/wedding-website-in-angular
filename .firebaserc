@@ -1,14 +1,14 @@
 {
   "targets": {
-    "sound-jigsaw-233407": {
+    "simaksh-wedding": {
       "hosting": {
         "weddingWebsite": [
-          "sound-jigsaw-233407"
+          "simaksh-wedding"
         ]
       }
     }
   },
   "projects": {
-    "default": "sound-jigsaw-233407"
+    "default": "simaksh-wedding"
   }
 }

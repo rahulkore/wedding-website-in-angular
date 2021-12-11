@@ -4,6 +4,7 @@ import { FormGroup } from '@angular/forms';
 import { delay } from 'rxjs';
 import { WishesService } from '../services/wishes.service';
 import { Wish } from '../shared/wish';
+declare const FlipDown : any;
 
 @Component({
   selector: 'app-home',
@@ -28,6 +29,11 @@ export class HomeComponent implements OnInit {
    }
 
   ngOnInit(): void {
+    var twoDaysFromNow = (new Date().getTime() / 1000) + (86400 * 16) + 1;
+    new FlipDown(twoDaysFromNow, {
+      theme: "dark",
+    }).start();
+
     setInterval(() =>{
       this.countDownDate = new Date("Dec 28, 2021 12:30:00").getTime();
       this.now = new Date().getTime();

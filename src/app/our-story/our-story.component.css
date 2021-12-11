@@ -1,7 +1,7 @@
 /*----  Main Style  ----*/
 #cards_landscape_wrap-2{
     text-align: center;
-    background: #ffdbfc;
+    background: #c6b9fa;
   }
   #cards_landscape_wrap-2 .container{
     padding-top: 40px; 
@@ -67,6 +67,7 @@
     margin-bottom: 0px;
     padding-bottom: 0px; 
     font-size: 14px;
+    font-family: 'Charmonman', cursive;
     letter-spacing: 1px;
     color: #000000;
   }
@@ -78,5 +79,5 @@
     text-transform: uppercase;
     font-family: 'Roboto Black', sans-serif;
     letter-spacing: 1px;
-    color: #00acc1;
+    color: #3f0afc;
   }

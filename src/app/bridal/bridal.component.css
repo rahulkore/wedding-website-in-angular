@@ -1,16 +1,16 @@
-.container {
-    background: #f9f9f9;
+@import url('https://fonts.googleapis.com/css?family=Tangerine');
+@import url('https://fonts.googleapis.com/css?family=Charmonman');
+
+#videoLinks {
+
+    text-align: center;
+    background: #c6b9fa;
+    padding-top: 40px;
+    padding-bottom: 100px;
 }
 
-.flex-column {
-    max-width: 260px;
-}
-
-img {
-    margin: 5px;
-}
-
-.scale {
-    transform: scaleY(1.05);
-    padding-top: 5px; 
+#videoLinks h1{
+    font-family: 'Tangerine',serif;
+    font-weight: bolder;
+    font-size: 40px;
 }
