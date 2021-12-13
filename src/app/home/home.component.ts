@@ -5,7 +5,7 @@ import { delay } from 'rxjs';
 import { WishesService } from '../services/wishes.service';
 import { Wish } from '../shared/wish';
 declare const FlipDown : any;
-
+declare var Typewriter : any;
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -22,27 +22,44 @@ export class HomeComponent implements OnInit {
   timeleft! : number;
   dummy : Wish[] = [];
   flag : boolean = true;
+  countDownOver : boolean = false;
+  
 
   wishFeedback!: FormGroup;
   constructor(private fb : FormBuilder, private wishService : WishesService) {
     this.createForm();
    }
 
+
   ngOnInit(): void {
-    var twoDaysFromNow = (new Date().getTime() / 1000) + (86400 * 16) + 1;
+    this.countDownDate = new Date("Dec 28, 2021 12:30:00").getTime();
+    var twoDaysFromNow = (this.countDownDate / 1000);
     new FlipDown(twoDaysFromNow, {
       theme: "dark",
-    }).start();
+    }).start()
+    .ifEnded(() => {
+      //console.log("The countdown has ended!");
+      this.countDownOver = true;
+    });
+    // const target = document.querySelector(".tw");
+    // console.log("Query selectore => ",  target);
+    // new Typewriter(target, {
+    //   loop: true,
+    //   typeColor: 'blue'
+    // })
+    // .type('Getting Married On')
+    //   .rest(500)
+    //   .start();
 
-    setInterval(() =>{
-      this.countDownDate = new Date("Dec 28, 2021 12:30:00").getTime();
-      this.now = new Date().getTime();
-      this.timeleft = this.countDownDate - this.now;
-      this.days = Math.floor(this.timeleft / (1000 * 60 * 60 * 24));;
-      this.hours = Math.floor((this.timeleft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));;
-      this.minutes = Math.floor((this.timeleft % (1000 * 60 * 60)) / (1000 * 60));
-      this.seconds = Math.floor((this.timeleft % (1000 * 60)) / 1000);
-    },0);
+    // setInterval(() =>{
+    //   this.countDownDate = new Date("Dec 28, 2021 12:30:00").getTime();
+    //   this.now = new Date().getTime();
+    //   this.timeleft = this.countDownDate - this.now;
+    //   this.days = Math.floor(this.timeleft / (1000 * 60 * 60 * 24));;
+    //   this.hours = Math.floor((this.timeleft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));;
+    //   this.minutes = Math.floor((this.timeleft % (1000 * 60 * 60)) / (1000 * 60));
+    //   this.seconds = Math.floor((this.timeleft % (1000 * 60)) / 1000);
+    // },0);
   }
 
 

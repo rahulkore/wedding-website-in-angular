@@ -1,10 +1,9 @@
-
 <div class="row">
     <div class="col-md-12">
        <div class="jumbotron bg-cover text-white" style="background-image: linear-gradient(to bottom, rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.6) 100%), url(assets/images/home.jpg)">
            <div class="container welcome-text">
-               <h2>Simran <span>&</span> Akshay</h2>
-               <h4>Getting Married On</h4>
+               <h2 >Simran <span>&</span> Akshay</h2>
+               <h4 class="tw">Getting Married On</h4>
                <h5>28th December 2021</h5>
                <!-- <hr class="my-4"> -->
                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
@@ -18,7 +17,7 @@
 
 <!-- countdown -->
 
-<div class="row">
+<div [hidden] = "countDownOver" class="row">
     <h4>Countdown Begins</h4>
     <div class="offset-md-3 col-md-6 col-sm-6 col-xs-12" >
         <div class="bg-coverdown">
@@ -29,7 +28,9 @@
                     <li><span id="minutes">{{minutes}}</span>Mins</li>
                     <li><span id="seconds">{{seconds}}</span>Secs</li>
                 </ul> -->
-                <div id="flipdown" class="flipdown"></div>
+                <div>
+                    <div id="flipdown" class="flipdown"></div>  
+                </div>
                 <br>
             </div>
         </div>

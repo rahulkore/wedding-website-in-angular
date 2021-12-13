@@ -22,6 +22,7 @@ import { environment } from 'src/environments/environment';
 import { provideFirebaseApp, getApp, initializeApp } from '@angular/fire/app';
 import { getFirestore, provideFirestore } from '@angular/fire/firestore';
 
+import 't-writer.js';
 
 @NgModule({
   declarations: [
