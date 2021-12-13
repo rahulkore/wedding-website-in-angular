@@ -77,6 +77,14 @@ li {
     color: #ff4545;
 }
 
+.welcome-text h4{
+    margin: 0;
+    margin-bottom: 35px;
+    font-weight: 500;
+    font-family: 'Charmonman', cursive;
+    color: white;
+    font-size: 20px;
+}
  h4{
   margin-top: 30px;
   font-weight: bold;
@@ -86,17 +94,16 @@ li {
   text-align: center;
 }
 
-.welcome-text h5 {
+/* .welcome-text h5 {
     width: 315px;
     height: 46px;
-    /* position: relative; */
     display: inline-block;
     font-family: 'Charmonman', cursive;
     color: #fff;
     font-size: 28px;
     margin: 0;
     font-weight: bold;
-}
+} */
 .video {
   text-align: center;
   height: 200px;
@@ -106,17 +113,19 @@ li {
 }
 
 .welcome-text .word {
-    margin-bottom: 30px;
-    font-weight: 500;
+    width: 315px;
+    height: 46px;
+    display: inline-block;
     font-family: 'Charmonman', cursive;
     color: white;
-    font-size: 20px;
+    font-size: 28px;
+    margin: 0;
+    font-weight: bold;
     border-right: 2px solid green;
-    line-height: 20px;
+    line-height: 28px;
     overflow: hidden;
-    animation: moveRight 1600ms steps(17) infinite, borderBlink 500ms infinite;
+    animation: moveRight 1400ms steps(10) infinite, borderBlink 200ms infinite;
     white-space: nowrap;
-    
   }
 
   
@@ -133,7 +142,7 @@ li {
     }
   
     100% {
-      width: 180px;
+      width: 250px;
     }
   }
   
