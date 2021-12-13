@@ -23,7 +23,6 @@ export class HomeComponent implements OnInit {
   dummy : Wish[] = [];
   flag : boolean = true;
   countDownOver : boolean = false;
-  
 
   wishFeedback!: FormGroup;
   constructor(private fb : FormBuilder, private wishService : WishesService) {
@@ -63,6 +62,7 @@ export class HomeComponent implements OnInit {
   }
 
 
+ 
   createForm(){
     this.wishFeedback = this.fb.group({
       name : "",

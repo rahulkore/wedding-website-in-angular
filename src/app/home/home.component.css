@@ -77,14 +77,6 @@ li {
     color: #ff4545;
 }
 
-.welcome-text h4{
-    margin: 0;
-    margin-bottom: 30px;
-    font-weight: 500;
-    font-family: 'Charmonman', cursive;
-    color: white;
-    font-size: 20px;
-}
  h4{
   margin-top: 30px;
   font-weight: bold;
@@ -112,3 +104,47 @@ li {
 .rowclass img {
     width: 60%;
 }
+
+.welcome-text .word {
+    margin-bottom: 30px;
+    font-weight: 500;
+    font-family: 'Charmonman', cursive;
+    color: white;
+    font-size: 20px;
+    border-right: 2px solid green;
+    line-height: 20px;
+    overflow: hidden;
+    animation: moveRight 1600ms steps(17) infinite, borderBlink 500ms infinite;
+    white-space: nowrap;
+    
+  }
+
+  
+  
+  .cursor {
+    height: 10px;
+    width: 1px;
+    color: white;
+  }
+  
+  @keyframes moveRight {
+    0% {
+      width: 0%;
+    }
+  
+    100% {
+      width: 180px;
+    }
+  }
+  
+  @keyframes borderBlink {
+    0%,
+    100% {
+      border-right-color: transparent;
+    }
+  
+    50% {
+      border-right-color: white;
+    }
+  }
+  
