@@ -121,10 +121,10 @@ li {
     font-size: 28px;
     margin: 0;
     font-weight: bold;
-    border-right: 2px solid green;
-    line-height: 28px;
+    /* border-right: 2px solid white; */
+    line-height: 50px;
     overflow: hidden;
-    animation: moveRight 1400ms steps(10) infinite, borderBlink 200ms infinite;
+    animation: moveRight 1400ms steps(10) normal, borderBlink 200ms normal;
     white-space: nowrap;
   }
 
@@ -149,11 +149,13 @@ li {
   @keyframes borderBlink {
     0%,
     100% {
-      border-right-color: transparent;
+      border-right : transparent;
+      display: none;
     }
   
     50% {
       border-right-color: white;
+      display: none;
     }
   }
   
